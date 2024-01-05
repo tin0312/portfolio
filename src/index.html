@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/output.css" />
+  <!-- Font Family -->
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true })
+  </script>
+  <title>Truong Hoang</title>
+</head>
+
+<body>
+  <main class="text-stone-50">
+    <!-- Home section -->
+    <section class="h-screen flex items-center justify-center">
+
+      <div id="about" class="flex items-center justify-center w-11/12">
+        <!-- Info Container -->
+        <div class="flex flex-col gap-5 w-1/2 items-center">
+          <p class="opacity-50 text-xl">Hi, I&apos;m</p>
+          <h3 class="font-bold text-6xl myName load-hidden">&nbsp;Truong Nhat Hoang</h3>
+          <h4 class="font-bold text-lime-400 text-2xl" id="animated-text">
+            <p>
+              <a href="" class="typewrite load-hidden" data-period="2000"
+                data-type='["I am a software engineer.", "I build.", "I code."]'>
+                <span class="wrap"></span>
+              </a>
+            </p>
+
+          </h4>
+        </div>
+        <!-- Image Container -->
+        <!-- 3 blurry color shadow balls moving behind the image -->
+        <div class="w-1/2 flex justify-end">
+          <img src="./images/avatar.jpeg" alt="avatar" class="w-2/5 rounded-full object-cover" />
+          <div class="container blob-container w-1/3">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Work Section-->
+    <section id="work" class="bg-black">
+      <h1 class="font-bold text-xl uppercase tracking-[0.1em]">My Work</h1>
+      <!-- Project 1 -->
+      <div class="mt-16 flex items-center mb-20">
+        <!-- Info Container -->
+        <div class="flex flex-col gap-4 w-1/2">
+          <h3 class="font-bold uppercase">Weather App</h3>
+          <p class="pt-4 opacity-50"> A weather app to help you stay up-to-date with weather conditions</p>
+          <div class="flex gap-5">
+            <button><a href="https://clinquant-marshmallow-2752bd.netlify.app/">Visit site <span
+                  class="ml-2">&rarr;</span></a></button>
+            <a href="https://github.com/tin0312/weather-app""><img src=" ../images/github.svg" alt="github-icon"
+              class="h-8"></a>
+          </div>
+          <div class="flex gap-2">
+            <img src="../images/tailwindIcon.png" alt="tailwind-icon" class="h-10">
+            <img src="../images/reactIcon.png" alt="react-icon" class="h-10" />
+            <img src="../images/firebaseIcon.png" alt="firebase-icon" class="h-10">
+            <img src="../images/apiIcon.png" alt="api-icon">
+          </div>
+        </div>
+        <!--Image Container  -->
+        <div class="w-1/2">
+          <img src="../images/weatherThumbNail.png" alt="weather-app-thumbnail">
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="mt-16 flex items-center mb-20">
+        <!-- Info Container -->
+        <div class="flex flex-col gap-4 w-1/2">
+          <h3 class="font-bold uppercase">Quizzical</h3>
+          <p class="pt-4 opacity-50">A quiz app that help you leverage your knowledge in various areas</p>
+          <div class="flex gap-5">
+            <button><a href=https://clinquant-marshmallow-2752bd.netlify.app/"">Visit site <span
+                  class="ml-2">&rarr;</span></a></button>
+            <a href="https://github.com/tin0312/weather-app""><img src=" ../images/github.svg" alt="github-icon"
+              class="h-8"></a>
+          </div>
+
+          <div class="flex gap-2">
+            <img src="../images/bootstrapIcon.png" alt="bootstrap-icon" class="h-10">
+            <img src="../images/reactIcon.png" alt="react-icon" class="h-10" />
+            <img src="../images/apiIcon.png" alt="api-icon">
+          </div>
+        </div>
+        <!--Image Container  -->
+        <div class="w-1/2">
+          <img src="../images/quizThumbNail.png" alt="quiz-app-thumbnail">
+        </div>
+      </div>
+      <div class="mt-16 flex items-center mb-20">
+        <!-- Info Container -->
+        <div class="flex flex-col gap-4 w-1/2">
+          <h3 class="font-bold uppercase">Room Booking System</h3>
+          <p class="pt-4 opacity-50"> An online room booking system that help you reserve your favourite room if choice
+          </p>
+          <div class="flex gap-5">
+            <button><a href="http://roomreservation.pythonanywhere.com/">Visit site <span
+                  class="ml-2">&rarr;</span></a></button>
+            <a href="https://github.com/tin0312/roomBookingSystem"><img src="../images/github.svg" alt="github-icon"
+                class="h-8"></a>
+          </div>
+
+          <div class="flex gap-2">
+            <img src="../images/bootstrapIcon.png" alt="bootrap-icon" class="h-10">
+            <img src="../images/flaskIcon.webp" alt="flask-icon" class="h-10" />
+            <img src="../images/mySQLIcon.png" alt="mysql-icon" class="h-10">
+            <img src="../images/pythonIcon.png" alt="python-icon" class="h-10">
+          </div>
+        </div>
+        <!--Image Container  -->
+        <div class="w-1/2">
+          <img src="../images/roomsystemThumbNail.png" alt="-app-thumbnail">
+        </div>
+      </div>
+      <div class="mt-16 flex items-center gap-2 mb-20">
+        <!-- Info Container -->
+        <div class="flex flex-col gap-5 w-1/2">
+          <h3 class="font-bold uppercase">Nails Salon Bar</h3>
+          <p class="pt-4 opacity-50">The nail salon web page allows customers to effortlessly explore business offers
+            with booking fnctionality</p>
+          <div class="flex gap-5">
+            <button><a href="https://ptnailsbar.netlify.app/">Visit site <span class="ml-2">&rarr;</span></a></button>
+            <a href="https://github.com/tin0312/PT-Nails-and-Bar-Milton"><img src="../images/github.svg"
+                alt="github-icon" class="h-8"></a>
+          </div>
+
+          <div class="flex gap-2">
+            <img src="../images/sassIcon.png" alt="sass-icon" class="h-10">
+            <img src="../images/reactIcon.png" alt="react-icon" class="h-10" />
+            <img src="../images/tailwindIcon.png" alt="tailwind-icon" class="h-10">
+
+          </div>
+        </div>
+        <!--Image Container  -->
+        <div class="w-1/2">
+          <img src="../images/salonThumbNail.png" alt="nailsalon-app-thumbnail">
+        </div>
+      </div>
+
+
+    </section>
+    <!-- Contacts Section-->
+    <section id="contact">
+      <div class="flex flex-col gap-8">
+        <h2 class="font-bold uppercase text-xl tracking-[0.1em]">Get in touch</h2>
+        <div class="flex flex-col gap-14">
+          <p class="opacity-50">Are you looking to turn your
+            idea into reality? Send me an email and let's get started!
+          </p>
+          <div>
+            <button class="py-3 px-5 border border-lime-600"><a href="mailto:justinhoang0312@gmail.com"
+                class="opacity-75">justinhoang0312@gmail.com</a></button>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="flex justify-center w-full">
+    <!-- Social Icons Section -->
+    <div class="flex gap-10">
+      <a href="https://www.linkedin.com/in/nhattruonghoang/"></a><img src="../images/linkedin.svg" alt="github-icon"
+        class="h-12">
+      </a>
+      <a href="https://github.com/tin0312"><img src="../images/github.svg" alt="linkedin-icon" class="h-12" /></a>
+    </div>
+  </footer>
+  </div>
+  <script type = "text/javascript" src="index.js"></script>
+</body>
+
+</html>

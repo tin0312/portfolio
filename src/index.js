@@ -58,6 +58,28 @@ window.onload = function () {
     css.innerHTML = ".typewrite > .wrap {border-right: 0.08em solid #fff;}";
     document.body.appendChild(css);
 };
-
+// Effects
+let slideUp = {
+    origin: "bottom",
+    opacity: null,
+    delay: 300,
+    distance: "50%"
+}
+let slideRight = {
+    origin: "left",
+    opacity: null,
+    delay: 300,
+    distance: "50%"
+}
+let slideLeft = {
+    origin: "right",
+    opacity: null,
+    delay: 300,
+    distance: "50%"
+}
+ScrollReveal().reveal(".avatarImage", slideLeft)
 ScrollReveal().reveal(".myName", { delay: 300 });
-ScrollReveal().reveal(".typewrite", { delay: 300 });
+ScrollReveal().reveal(".typewrite", { delay: 300 })
+ScrollReveal().reveal(".avatar", slideRight)
+ScrollReveal().reveal(".about", slideUp)
+

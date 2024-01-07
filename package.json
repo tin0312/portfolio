@@ -1,0 +1,14 @@
+{
+ "scripts": {
+  "watch": "npm run build",
+  "build": "node-sass ./src/styles/index.scss -o ./src/styles && postcss ./src/styles/index.css -o ./src/styles/output.css --watch"
+}
+,  
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.33",
+    "scrollreveal": "^4.0.9",
+    "tailwindcss": "^3.4.1"
+  }
+}

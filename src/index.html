@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,15 +12,16 @@
 </head>
 
 <body>
-  <main class="text-stone-50">
+  <main class="text-stone-50 flex flex-col gap-20">
     <!-- Home section -->
-    <section class="h-screen flex items-center justify-center">
+    <section class="h-screen flex laptop:flex-row laptop:items-center laptop:justify-center mobile:pb-10 relative">
 
-      <div id="about" class="flex items-center justify-center w-11/12">
+      <div id="about"
+        class="flex mobile:flex-col laptop:flex-row mobile:items-center mobile:gap-36 mobile:pt-[130px]">
         <!-- Info Container -->
-        <div class="flex flex-col gap-5 w-1/2 items-center">
-          <p class="opacity-50 text-xl">Hi, I&apos;m</p>
-          <h3 class="font-bold text-6xl myName load-hidden">&nbsp;Truong Nhat Hoang</h3>
+        <div class="flex flex-col gap-5 laptop:w-1/2 items-center mobile:w-full">
+          <p class="opacity-50 mobile:text-2xl laptop:text-xl">Hi, I&apos;m</p>
+          <h3 class="font-bold mobile:text-4xl laptop:text-6xl myName load-hidden">&nbsp;Truong Nhat Hoang</h3>
           <h4 class="font-bold text-lime-400 text-2xl">
             <p>
               <a href="" class="typewrite load-hidden" data-period="2000"
@@ -35,26 +33,31 @@
           </h4>
         </div>
         <!-- Image Container -->
-        <div class="w-1/2 flex justify-end">
-          <img src="./images/avatar.jpeg" alt="avatar" class="w-2/5 rounded-full object-cover avatarImage" />
-          <div class="container blob-container w-1/3">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
-            <div class="blob blob-3"></div>
-          </div>
+        <div class="laptop:w-1/2 mobile:w-full flex justify-center">
+          <img src="./images/avatar.jpeg" alt="avatar"
+            class="w-3/5 rounded-full object-cover avatarImage" />
+        </div>
+        <div class ="blob-container absolute">
+          <div class="blob blob-1"></div>
+          <div class="blob blob-2"></div>
+          <div class="blob blob-3"></div>
         </div>
       </div>
+
     </section>
     <!-- About Section -->
-    <section class="h-screen flex justify-center items-center relative overflow-hidden">
-      <div class="flex justify-center items-center">
-        <div class="w-1/2 flex justify-center">
+    <section
+      class="mobile:h-full laptop:h-screen laptop:flex-row mobile:flex-col flex laptop:justify-center laptop:items-center relative overflow-hidden">
+      <div class="flex laptop:flex-row mobile:flex-col laptop:justify-center laptop:items-center">
+        <div class="laptop:w-1/2 mobile:w-full flex desktop:justify-end  mobile:justify-center mobile:pb-5">
           <img src="./images/aboutImage.jpg" alt="apple-avatar"
             class="w-1/3 apple-sticker rounded-full shadow-2xl avatar">
         </div>
-        <div class="w-1/3 flex flex-col gap-4">
+        <div class="mobile:w-full laptop:w-1/2 flex flex-col mobile:items-center laptop:gap-4 mobile:gap-6">
           <h2 class="uppercase text-4xl text-lime-500 font-bold about">Nice to me you!</h2>
-          <p class="leading-6 about">I&apos;m a frontend developer based in Toronto who is originally from Viet Nam.
+          <p
+            class="leading-6 about laptop:w-3/5 mobile:w-3/4 laptop:text-start mobile:text-center mobile:text-2xl laptop:text-lg opacity-50">
+            I&apos;m a frontend developer based in Toronto who is originally from Viet Nam.
             My background is in Networking Security at Ontario Tech University in Oshawa as major.
             During my studies, I took some of software development courses and it really has triggered
             my passion for coding.I enjoy coding as my fantasy and building stuff from scratch is considered
@@ -80,99 +83,116 @@
       <div class="meteor-9"></div>
     </section>
 
-    </section <!-- Skill Section -->
-    <section class="h-screen flex flex-col items-center gap-40">
-      <h2 class="skill-section uppercase text-4xl text-lime-500 font-bold"> &lt; &apos; My Tech Stack &apos; &gt;</h2>
+    </section>
+    <!-- Skill Section -->
+    <section class="h-screen flex  flex-col items-center  laptop:gap-40">
+      <h2 class="skill-section uppercase laptop:text-4xl mobile:text-2xl  text-lime-500 font-bold"> &lt; &apos; My Tech
+        Stack &apos; &gt;</h2>
       <div>
         <!-- Tech Stack Container -->
-        <section class="stack-container load-hidden flex flex-col gap-20">
-          <div class="flex gap-20">
+        <section class="load-hidden flex flex-col laptop:gap-20 mobile:gap-10 overflow-hidden py-10">
+          <div
+            class="flex laptop:flex-row mobile:flex-col mobile:items-center mobile:gap-10 laptop:gap-20 stack-container-one">
             <!-- First row -->
-            <div class="skill-card border border-slate-500 rounded-full px-12 py-1 hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
-                <img src="./images/htmlIcon.png" alt="html-icon" width="50px">
-                <p>HTML</p>
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black hover:border-none  cursor-pointer shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
+                <img src="./images/htmlIcon.png" alt="html-icon" class="stack-icon" width="50px">
+                <p class="text-xl">HTML</p>
               </div>
             </div>
-            <div class="skill-card border border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full    hover:bg-lime-50 hover:text-black  hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/cssIcon.png" alt="css-icon" width="50px">
-                <p>CSS</p>
+                <p class="text-xl">CSS</p>
               </div>
             </div>
-            <div class="skill-card border border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black  hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/jsIcon.png" alt="javascript-icon" width="50px">
-                <p>Javascript</p>
+                <p class="text-xl">JAVASCRIPT</p>
               </div>
             </div>
-            <div class="skill-card border border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black  hover:border-none cursor-pointer   shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/tailwindIcon.png" alt="Tailwind-Icon" width="50px">
-                <p>Tailwind</p>
+                <p class="text-xl">TAILWIND</p>
               </div>
             </div>
 
           </div>
 
-          <div class="flex gap-20">
+          <div
+            class="flex laptop:flex-row mobile:flex-col mobile:items-center mobile:gap-10 laptop:gap-20  stack-container-two">
             <!-- Second Row -->
 
-            <div class="skill-card border border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/bootstrapIcon.png" alt="Bootstrap-Icon" width="50px">
-                <p>Bootstrap</p>
+                <p class="text-xl">BOOTSTRAP</p>
               </div>
             </div>
 
-            <div class="skill-card border border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black hover:border-none  cursor-pointer  shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/sassIcon.png" alt="Sass-Icon" width="50px">
-                <p>SASS</p>
+                <p class="text-xl">SASS</p>
               </div>
             </div>
 
-            <div class="skill-card border  border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border  border-slate-500 rounded-full   hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/reactIcon.png" alt="React-Icon" width="50px">
-                <p>React</p>
+                <p class="text-xl">REACT</p>
               </div>
             </div>
 
-            <div class="skill-card border  border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border  border-slate-500 rounded-full   hover:bg-lime-50 hover:text-black hover:border-none  cursor-pointer   shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/nextIcon.png" alt="NextJS-Icon" width="50px">
-                <p>NextJS</p>
+                <p class="text-xl">NEXTJS</p>
               </div>
             </div>
           </div>
           <!-- Third Row -->
-          <div class="flex gap-20">
-            <div class="skill-card border border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+          <div
+            class=" p-1 flex laptop:flex-row mobile:flex-col mobile:items-center mobile:gap-10 laptop:gap-20 stack-container-three">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none  cursor-pointer  shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/typescriptIcon.png" alt="Typescript-Icon" width="50px">
-                <p>Typescript</p>
+                <p class="text-xl">TYPESCRIPT</p>
               </div>
             </div>
 
-            <div class="skill-card border  border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border  border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/firebaseIcon.png" alt="Firebase-Icon" width="50px">
-                <p>Firebase</p>
+                <p class="text-xl">FIREBASE</p>
               </div>
             </div>
 
-            <div class="skill-card border  border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border  border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black hover:border-none  cursor-pointer  shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/figmaIcon.png" alt="Figma-Icon" width="50px">
-                <p>Figma</p>
+                <p class="text-xl">FIGMA</p>
               </div>
             </div>
 
-            <div class="skill-card border  border-slate-500 rounded-full px-12 py-1  hover:bg-lime-50 hover:text-black">
-              <div class="flex items-center gap-2">
+            <div
+              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border  border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
+              <div class="flex items-center laptop:gap-2 mobile:gap-6">
                 <img src="./images/viteIcon.png" alt="Vite-Icon" width="50px">
-                <p>Vite</p>
+                <p class="text-xl">VITE</p>
               </div>
             </div>
           </div>

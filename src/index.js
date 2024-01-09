@@ -82,4 +82,6 @@ ScrollReveal().reveal(".myName", { delay: 300 });
 ScrollReveal().reveal(".typewrite", { delay: 300 })
 ScrollReveal().reveal(".avatar", slideRight)
 ScrollReveal().reveal(".about", slideUp)
-ScrollReveal().reveal(".stack-container", slideUp)
+ScrollReveal().reveal(".stack-container-one", slideRight)
+ScrollReveal().reveal(".stack-container-two", slideLeft)
+ScrollReveal().reveal(".stack-container-three", slideRight)

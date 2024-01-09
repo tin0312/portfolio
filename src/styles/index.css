@@ -15,6 +15,8 @@ body {
   background-image: url("../images/bg-image.jpg"); }
 
 /* Home Section */
+#animated-text {
+  text-shadow: 1px 1px 100px greenyellow; }
 
 /* Animated blur blobs behind the image*/
 :root {
@@ -23,19 +25,17 @@ body {
   --blob-3: #ffae03; }
 
 .blob-container {
-  position: relative;
-  top: -150px;
-  left: -400px;
+  top: 30%;
+  right: 20%;
   z-index: -2; }
 
 .blob {
-  position: absolute;
   border-radius: 100px;
   filter: blur(75px); }
 
 .blob-1 {
   background-color: var(--blob-1);
-  top: 200px;
+  top: 100px;
   left: 0;
   width: 200px;
   height: 150px;
@@ -114,13 +114,13 @@ body {
 /* About Section */
 .meteor-1 {
   position: absolute;
-  top: 100px;
-  left: 84%;
+  top: 299px;
+  left: 26%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 8.4s linear infinite; }
+  animation: meteor 8.8s linear infinite; }
   .meteor-1:before {
     content: "";
     position: absolute;
@@ -133,13 +133,13 @@ body {
 
 .meteor-2 {
   position: absolute;
-  top: 89px;
-  left: 73%;
+  top: 108px;
+  left: 80%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 7.4s linear infinite; }
+  animation: meteor 6.2s linear infinite; }
   .meteor-2:before {
     content: "";
     position: absolute;
@@ -152,13 +152,13 @@ body {
 
 .meteor-3 {
   position: absolute;
-  top: 246px;
-  left: 35%;
+  top: 85px;
+  left: 78%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 7.8s linear infinite; }
+  animation: meteor 5s linear infinite; }
   .meteor-3:before {
     content: "";
     position: absolute;
@@ -171,13 +171,13 @@ body {
 
 .meteor-4 {
   position: absolute;
-  top: 186px;
-  left: 87%;
+  top: 200px;
+  left: 85%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 7s linear infinite; }
+  animation: meteor 4.7s linear infinite; }
   .meteor-4:before {
     content: "";
     position: absolute;
@@ -190,13 +190,13 @@ body {
 
 .meteor-5 {
   position: absolute;
-  top: 68px;
-  left: 99%;
+  top: 170px;
+  left: 18%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 8.6s linear infinite; }
+  animation: meteor 4.3s linear infinite; }
   .meteor-5:before {
     content: "";
     position: absolute;
@@ -209,13 +209,13 @@ body {
 
 .meteor-6 {
   position: absolute;
-  top: 214px;
-  left: 49%;
+  top: 185px;
+  left: 60%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 7.4s linear infinite; }
+  animation: meteor 7s linear infinite; }
   .meteor-6:before {
     content: "";
     position: absolute;
@@ -228,13 +228,13 @@ body {
 
 .meteor-7 {
   position: absolute;
-  top: 80px;
-  left: 77%;
+  top: 270px;
+  left: 40%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 4.3s linear infinite; }
+  animation: meteor 8.8s linear infinite; }
   .meteor-7:before {
     content: "";
     position: absolute;
@@ -247,13 +247,13 @@ body {
 
 .meteor-8 {
   position: absolute;
-  top: 220px;
-  left: 37%;
+  top: 225px;
+  left: 81%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 8.1s linear infinite; }
+  animation: meteor 3.1s linear infinite; }
   .meteor-8:before {
     content: "";
     position: absolute;
@@ -266,13 +266,13 @@ body {
 
 .meteor-9 {
   position: absolute;
-  top: 185px;
-  left: 56%;
+  top: 295px;
+  left: 54%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 9.5s linear infinite; }
+  animation: meteor 10s linear infinite; }
   .meteor-9:before {
     content: "";
     position: absolute;

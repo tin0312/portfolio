@@ -8,16 +8,15 @@
   <script>
     ScrollReveal({ reset: true })
   </script>
-  <title>Truong Hoang</title>
+  <title>Truong</title>
 </head>
 
 <body>
-  <main class="text-stone-50 flex flex-col gap-20">
+  <main class="text-stone-50 flex flex-col mobile:gap-20">
     <!-- Home section -->
     <section class="h-screen flex laptop:flex-row laptop:items-center laptop:justify-center mobile:pb-10 relative">
 
-      <div id="about"
-        class="flex mobile:flex-col laptop:flex-row mobile:items-center mobile:gap-36 mobile:pt-[130px]">
+      <div id="about" class="flex mobile:flex-col laptop:flex-row mobile:items-center mobile:gap-36 mobile:pt-[130px]">
         <!-- Info Container -->
         <div class="flex flex-col gap-5 laptop:w-1/2 items-center mobile:w-full">
           <p class="opacity-50 mobile:text-2xl laptop:text-xl">Hi, I&apos;m</p>
@@ -34,10 +33,9 @@
         </div>
         <!-- Image Container -->
         <div class="laptop:w-1/2 mobile:w-full flex justify-center">
-          <img src="./images/avatar.jpeg" alt="avatar"
-            class="w-3/5 rounded-full object-cover avatarImage" />
+          <img src="./images/avatar.jpeg" alt="avatar" class="w-3/5 rounded-full object-cover avatarImage" />
         </div>
-        <div class ="blob-container absolute">
+        <div class="blob-container absolute">
           <div class="blob blob-1"></div>
           <div class="blob blob-2"></div>
           <div class="blob blob-3"></div>
@@ -47,7 +45,7 @@
     </section>
     <!-- About Section -->
     <section
-      class="mobile:h-full laptop:h-screen laptop:flex-row mobile:flex-col flex laptop:justify-center laptop:items-center relative overflow-hidden">
+      class="laptop:h-screen laptop:flex-row mobile:flex-col flex laptop:justify-center laptop:items-center relative overflow-hidden">
       <div class="flex laptop:flex-row mobile:flex-col laptop:justify-center laptop:items-center">
         <div class="laptop:w-1/2 mobile:w-full flex desktop:justify-end  mobile:justify-center mobile:pb-5">
           <img src="./images/aboutImage.jpg" alt="apple-avatar"
@@ -56,7 +54,7 @@
         <div class="mobile:w-full laptop:w-1/2 flex flex-col mobile:items-center laptop:gap-4 mobile:gap-6">
           <h2 class="uppercase text-4xl text-lime-500 font-bold about">Nice to me you!</h2>
           <p
-            class="leading-6 about laptop:w-3/5 mobile:w-3/4 laptop:text-start mobile:text-center mobile:text-2xl laptop:text-lg opacity-50">
+            class="leading-6 about laptop:w-3/5 mobile:w-3/4 laptop:text-start mobile:text-center mobile:text-lg laptop:text-lg opacity-50">
             I&apos;m a frontend developer based in Toronto who is originally from Viet Nam.
             My background is in Networking Security at Ontario Tech University in Oshawa as major.
             During my studies, I took some of software development courses and it really has triggered
@@ -85,8 +83,9 @@
 
     </section>
     <!-- Skill Section -->
-    <section class="h-screen flex  flex-col items-center  laptop:gap-40">
-      <h2 class="skill-section uppercase laptop:text-4xl mobile:text-2xl  text-lime-500 font-bold"> &lt; &apos; My Tech
+    <section class="laptop:h-screen flex  flex-col items-center laptop:gap-40 overflow-hidden">
+      <h2 class="skill-section uppercase laptop:text-4xl mobile:text-2xl  text-lime-500 font-bold techStack"> &lt;
+        &apos; My Tech
         Stack &apos; &gt;</h2>
       <div>
         <!-- Tech Stack Container -->
@@ -199,7 +198,290 @@
       </div>
     </section>
 
+    <!-- Project Section -->
+    <section class="h-screen flex flex-col items-center laptop:gap-20 mobile:gap-10 ">
+      <h2 class="uppercase text-4xl text-lime-500 font-bold project myProject"> &lt; &apos; My Projects &apos; &gt;</h2>
+      <!-- Project container -->
+      <div class="project-container load-hidden flex flex-col gap-10 items-center">
 
+        <!-- First Row -->
+        <div
+          class="flex laptop:h-64 w-full mobile:flex-col mobile:items-center laptop:flex-row laptop:gap-40 mobile:gap-14">
+          <div
+            class="flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+            <!-- Project Image -->
+            <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
+              <img src="./images/weatheressentials.png" alt="roomsystemThumbNail"
+                class="w-full h-full mobile:hidden laptop:block">
+              <img src="./images/weatheressential-mobile.PNG" alt="roomsystemThumbNail"
+                class="w-full h-full laptop:hidden">
+            </div>
+            <!-- Project Information -->
+            <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
+              <div class="flex justify-between">
+                <p class="text-lg font-bold">Weather Forecast</p>
+                <!-- Project stacks -->
+                <div class="flex items-center gap-1">
+                  <img src="./images/reactIcon.png" alt="react-icon" width="30px">
+                  <img src="./images/tailwindIcon.png" alt="tailwind-icon" width="30px">
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
+                  <img src="./images/firebaseIcon.png" alt="firebase-icon" width="30px">
+                </div>
+              </div>
+              <!-- Project description -->
+              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10">An assistance for your day-to-day planning
+                activities, enabling users to effortlessly explore weather essentials.
+              </p>
+              <!-- Project link -->
+              <div>
+                <div class="flex justify-center gap-4">
+                  <a href="https://github.com/tin0312/weather-app">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                    </div>
+                  </a>
+                  <a href="https://weatheressentials.netlify.app/">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div
+            class="flex border laptop:flex-row mobile:flex-col laptop:h-full laptop:w-[500px] mobile:w-3/4 mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+            <!-- Project Image -->
+            <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
+              <img src="./images/roomreservation.png" alt="roomsystemThumbNail"
+                class="w-full h-full mobile:hidden laptop:block">
+              <img src="./images/roomreservation-mobile.png" alt="roomsystemThumbNail"
+                class="w-full h-full laptop:hidden">
+            </div>
+            <!-- Project Information -->
+            <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
+              <div class="flex justify-between">
+                <p class="text-lg font-bold">Room reservation</p>
+                <!-- Project stacks -->
+                <div class="flex items-center gap-1">
+                  <img src="./images/pythonIcon.png" alt="python-icon" width="30px">
+                  <img src="./images/bootstrapIcon.png" alt="bootstrap-icon" width="30px">
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
+                  <img src="./images/mySQLIcon.png" alt="mysql-icon" width="30px">
+                </div>
+              </div>
+              <!-- Project description -->
+              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10"> Plan your study width a full support of room booking/cancelling system with ease. 
+              </p>
+              <!-- Project link -->
+              <div>
+                <div class="flex justify-center gap-4">
+                  <a href="https://github.com/tin0312/roomBookingSystem">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                    </div>
+                  </a>
+                  <a href="http://roomreservation.pythonanywhere.com/">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Second Row -->
+        <div
+          class="flex laptop:h-64 w-full mobile:flex-col mobile:items-center laptop:flex-row laptop:gap-40 mobile:gap-14">
+          <div
+            class="flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+
+            <!-- Project Image -->
+            <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
+              <img src="./images/challengeyourself.png" alt="quizThumbNail"
+                class="w-full h-full mobile:hidden laptop:block"/>
+              <img src="./images/challengeyourself-mobile.png" alt="quizThumbNail" class="w-full h-full laptop:hidden"/>
+            </div>
+            <!-- Project Information -->
+            <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
+              <div class="flex justify-between">
+                <p class="text-lg font-bold">Quizzical</p>
+                <!-- Project stacks -->
+                <div class="flex items-center gap-1">
+                  <img src="./images/reactIcon.png" alt="react-icon" width="30px">
+                  <img src="./images/bootstrapIcon.png" alt="bootstrap-icon" width="30px">
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
+                  <img src="./images/apiIcon.png" alt="api-icon" width="30px">
+                </div>
+              </div>
+              <!-- Project description -->
+              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10"> An assistance that helps you boost up your
+                knowledge in a variaty of aspects, pick a topic and challenge your self with different difficulty levels!
+              </p>
+              <!-- Project link -->
+              <div>
+                <div class="flex justify-center gap-4">
+                  <a href="https://github.com/tin0312/quizApp">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                    </div>
+                  </a>
+                  <a href="https://challengeyourself.netlify.app/">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div
+            class="flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+            <!-- Project Image -->
+            <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
+              <img src="./images/yourshorturls.png" alt="roomsystemThumbNail"
+                class="w-full h-full mobile:hidden laptop:block">
+              <img src="./images/yourshorturls-mobile.png" alt="roomsystemThumbNail"
+                class="w-full h-full laptop:hidden">
+            </div>
+            <!-- Project Information -->
+            <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
+              <div class="flex justify-between border-none">
+                <p class="text-lg font-bold">URL Shortener</p>
+                <!-- Project stacks -->
+                <div class="flex items-center gap-1">
+                  <img src="./images/reactIcon.png" alt="react-icon" width="30px">
+                  <img src="./images/tailwindIcon.png" alt="tailwind-icon" width="30px">
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
+                  <img src="./images/sassIcon.png" alt="firebase-icon" width="30px">
+                </div>
+              </div>
+              <!-- Project description -->
+              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10">
+                Conveniently have your long and difficult to remember URLs shortened by our trimmer which helps you to keep everything organized! 
+              </p>
+              <!-- Project link -->
+              <div>
+                <div class="flex justify-center gap-4">
+                  <a href="https://github.com/tin0312/shortly-landing-page">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                    </div>
+                  </a>
+                  <a href="https://yourshorturls.netlify.app/">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Third Row -->
+        <div
+          class="flex laptop:h-64 w-full mobile:flex-col mobile:items-center laptop:flex-row laptop:gap-40 mobile:gap-14">
+          <div
+            class="flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+
+            <!-- Project Image -->
+            <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
+              <img src="./images/passwordGenerator.png" alt="passwordGenerator"
+                class="w-full h-full mobile:hidden laptop:block">
+              <img src="./images/passwordGenerator-mobile.png" alt="passwordGenerator"
+                class="w-full h-full laptop:hidden">
+            </div>
+            <!-- Project Information -->
+            <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
+              <div class="flex justify-between">
+                <p class="text-lg font-bold">Password Generator</p>
+                <!-- Project stacks -->
+                <div class="flex items-center gap-1">
+                  <img src="./images/reactIcon.png" alt="react-icon" width="30px">
+                  <img src="./images/bootstrapIcon.png" alt="bootstrap-icon" width="30px">
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
+                  <img src="./images/sassIcon.png" alt="sass-icon" width="30px">
+                </div>
+              </div>
+              <!-- Project description -->
+              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10"> A password manager generator with custom options that helps with password generation and security.
+              </p>
+              <!-- Project link -->
+              <div>
+                <div class="flex justify-center gap-4">
+                  <a
+                    href="https://github.com/tin0312/password-generator/tree/412a562a95451c898e2b7362696e049b1113f813p">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                    </div>
+                  </a>
+                  <a href="https://chooseyourpassword.netlify.app/">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div
+            class="flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+            <!-- Project Image -->
+            <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
+              <img src="./images/ptnailsbar.png" alt="roomsystemThumbNail"
+                class="w-full h-full mobile:hidden laptop:block">
+              <img src="./images/ptnailsbar-mobile.png" alt="roomsystemThumbNail" class="w-full h-full laptop:hidden">
+            </div>
+            <!-- Project Information -->
+            <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
+              <div class="flex justify-between">
+                <p class="text-lg font-bold">PT Nails and Bar</p>
+                <!-- Project stacks -->
+                <div class="flex items-center gap-1">
+                  <img src="./images/reactIcon.png" alt="react-icon" width="30px">
+                  <img src="./images/tailwindIcon.png" alt="tailwind-icon" width="30px">
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
+                  <img src="./images/sassIcon.png" alt="firebase-icon" width="30px">
+                </div>
+              </div>
+              <!-- Project description -->
+              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10">
+                PT Nails & Bar landing page provides precise and up-to-date information about the store with on-going promotion updates and online booking.
+              </p>
+              <!-- Project link -->
+              <div>
+                <div class="flex justify-center gap-4">
+                  <a href="https://github.com/tin0312/PT-Nails-and-Bar-Milton">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                    </div>
+                  </a>
+                  <a href="https://ptnailsbar.netlify.app/">
+                    <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
+                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
     <script type="text/javascript" src="index.js"></script>
 </body>

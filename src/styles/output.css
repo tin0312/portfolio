@@ -492,6 +492,21 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 430px) {
+
+  .container {
+    max-width: 430px;
+  }
+}
+@media (min-width: 980px) {
+
+  .container {
+    max-width: 980px;
+  }
+}
 .absolute {
   position: absolute;
 }
@@ -501,17 +516,20 @@ video {
 .flex {
   display: flex;
 }
+.h-full {
+  height: 100%;
+}
 .h-screen {
   height: 100vh;
 }
 .w-1\/3 {
   width: 33.333333%;
 }
-.w-full {
-  width: 100%;
-}
 .w-3\/5 {
   width: 60%;
+}
+.w-full {
+  width: 100%;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -525,8 +543,20 @@ video {
 .justify-center {
   justify-content: center;
 }
-.gap-20 {
-  gap: 5rem;
+.justify-between {
+  justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
 }
 .gap-5 {
   gap: 1.25rem;
@@ -537,12 +567,30 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-lg {
+  border-radius: 0.5rem;
+}
 .border {
   border-width: 1px;
+}
+.border-none {
+  border-style: none;
 }
 .border-slate-500 {
   --tw-border-opacity: 1;
   border-color: rgb(100 116 139 / var(--tw-border-opacity));
+}
+.border-slate-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .object-cover {
   -o-object-fit: cover;
@@ -551,9 +599,18 @@ video {
 .p-1 {
   padding: 0.25rem;
 }
+.p-4 {
+  padding: 1rem;
+}
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+.pt-4 {
+  padding-top: 1rem;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -562,6 +619,10 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -639,7 +700,7 @@ body {
 
 .blob-1 {
   background-color: var(--blob-1);
-  top: 100px;
+  top: 200px;
   left: 0;
   width: 200px;
   height: 150px;
@@ -718,13 +779,13 @@ body {
 /* About Section */
 .meteor-1 {
   position: absolute;
-  top: 299px;
-  left: 26%;
+  top: 175px;
+  left: 76%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 8.8s linear infinite; }
+  animation: meteor 4s linear infinite; }
   .meteor-1:before {
     content: "";
     position: absolute;
@@ -737,13 +798,13 @@ body {
 
 .meteor-2 {
   position: absolute;
-  top: 108px;
-  left: 80%;
+  top: 297px;
+  left: 41%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 6.2s linear infinite; }
+  animation: meteor 6.4s linear infinite; }
   .meteor-2:before {
     content: "";
     position: absolute;
@@ -756,13 +817,13 @@ body {
 
 .meteor-3 {
   position: absolute;
-  top: 85px;
-  left: 78%;
+  top: 197px;
+  left: 40%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 5s linear infinite; }
+  animation: meteor 4s linear infinite; }
   .meteor-3:before {
     content: "";
     position: absolute;
@@ -775,13 +836,13 @@ body {
 
 .meteor-4 {
   position: absolute;
-  top: 200px;
-  left: 85%;
+  top: 158px;
+  left: 57%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 4.7s linear infinite; }
+  animation: meteor 3.7s linear infinite; }
   .meteor-4:before {
     content: "";
     position: absolute;
@@ -794,13 +855,13 @@ body {
 
 .meteor-5 {
   position: absolute;
-  top: 170px;
-  left: 18%;
+  top: 128px;
+  left: 12%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 4.3s linear infinite; }
+  animation: meteor 6.7s linear infinite; }
   .meteor-5:before {
     content: "";
     position: absolute;
@@ -813,13 +874,13 @@ body {
 
 .meteor-6 {
   position: absolute;
-  top: 185px;
-  left: 60%;
+  top: 277px;
+  left: 64%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 7s linear infinite; }
+  animation: meteor 4.6s linear infinite; }
   .meteor-6:before {
     content: "";
     position: absolute;
@@ -832,13 +893,13 @@ body {
 
 .meteor-7 {
   position: absolute;
-  top: 270px;
-  left: 40%;
+  top: 97px;
+  left: 85%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 8.8s linear infinite; }
+  animation: meteor 4.1s linear infinite; }
   .meteor-7:before {
     content: "";
     position: absolute;
@@ -851,13 +912,13 @@ body {
 
 .meteor-8 {
   position: absolute;
-  top: 225px;
-  left: 81%;
+  top: 268px;
+  left: 55%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 3.1s linear infinite; }
+  animation: meteor 4.9s linear infinite; }
   .meteor-8:before {
     content: "";
     position: absolute;
@@ -870,13 +931,13 @@ body {
 
 .meteor-9 {
   position: absolute;
-  top: 295px;
-  left: 54%;
+  top: 56px;
+  left: 62%;
   width: 300px;
   height: 1px;
   transform: rotate(-45deg);
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  animation: meteor 10s linear infinite; }
+  animation: meteor 5.7s linear infinite; }
   .meteor-9:before {
     content: "";
     position: absolute;
@@ -905,6 +966,11 @@ body {
   border-style: none;
 }
 
+.hover\:border-lime-300:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(190 242 100 / var(--tw-border-opacity));
+}
+
 .hover\:bg-lime-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(247 254 231 / var(--tw-bg-opacity));
@@ -917,16 +983,32 @@ body {
 
 @media (min-width: 430px) {
 
-  .mobile\:h-full {
-    height: 100%;
+  .mobile\:hidden {
+    display: none;
   }
 
-  .mobile\:w-2\/5 {
-    width: 40%;
+  .mobile\:h-1\/2 {
+    height: 50%;
+  }
+
+  .mobile\:h-2\/5 {
+    height: 40%;
+  }
+
+  .mobile\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .mobile\:h-\[500px\] {
+    height: 500px;
   }
 
   .mobile\:w-3\/4 {
     width: 75%;
+  }
+
+  .mobile\:w-72 {
+    width: 18rem;
   }
 
   .mobile\:w-80 {
@@ -935,10 +1017,6 @@ body {
 
   .mobile\:w-full {
     width: 100%;
-  }
-
-  .mobile\:w-3\/5 {
-    width: 60%;
   }
 
   .mobile\:flex-col {
@@ -955,6 +1033,14 @@ body {
 
   .mobile\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .mobile\:gap-14 {
+    gap: 3.5rem;
+  }
+
+  .mobile\:gap-20 {
+    gap: 5rem;
   }
 
   .mobile\:gap-36 {
@@ -991,40 +1077,44 @@ body {
     line-height: 2.5rem;
   }
 
-  @media (min-width: 980px) {
-
-    .mobile\:laptop\:items-center {
-      align-items: center;
-    }
+  .mobile\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width: 980px) {
 
-  @media (min-width: 430px) {
-
-    @media (min-width: 980px) {
-
-      .laptop\:mobile\:laptop\:items-center {
-        align-items: center;
-      }
-    }
+  .laptop\:block {
+    display: block;
   }
 
-  .laptop\:flex {
-    display: flex;
+  .laptop\:hidden {
+    display: none;
+  }
+
+  .laptop\:h-64 {
+    height: 16rem;
+  }
+
+  .laptop\:h-full {
+    height: 100%;
   }
 
   .laptop\:h-screen {
     height: 100vh;
   }
 
-  .laptop\:h-2\/5 {
-    height: 40%;
-  }
-
   .laptop\:w-1\/2 {
     width: 50%;
+  }
+
+  .laptop\:w-1\/4 {
+    width: 25%;
+  }
+
+  .laptop\:w-3\/4 {
+    width: 75%;
   }
 
   .laptop\:w-3\/5 {
@@ -1035,8 +1125,20 @@ body {
     width: 13rem;
   }
 
-  .laptop\:w-2\/5 {
-    width: 40%;
+  .laptop\:w-80 {
+    width: 20rem;
+  }
+
+  .laptop\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .laptop\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .laptop\:w-\[px\] {
+    width: px;
   }
 
   .laptop\:flex-row {

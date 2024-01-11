@@ -199,16 +199,16 @@
     </section>
 
     <!-- Project Section -->
-    <section class="h-screen flex flex-col items-center laptop:gap-20 mobile:gap-10 ">
-      <h2 class="uppercase text-4xl text-lime-500 font-bold project myProject"> &lt; &apos; My Projects &apos; &gt;</h2>
+    <section class="laptop:h-screen flex flex-col items-center laptop:gap-20 mobile:gap-10 overflow-hidden">
+      <h2 class="uppercase laptop:text-4xl mobile:text-2xl text-lime-500 font-bold project myProject"> &lt; &apos; My Projects &apos; &gt;</h2>
       <!-- Project container -->
-      <div class="project-container load-hidden flex flex-col gap-10 items-center">
+      <div class="load-hidden flex flex-col gap-10 items-center">
 
         <!-- First Row -->
         <div
           class="flex laptop:h-64 w-full mobile:flex-col mobile:items-center laptop:flex-row laptop:gap-40 mobile:gap-14">
           <div
-            class="flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+            class="project-container-one flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
               <img src="./images/weatheressentials.png" alt="roomsystemThumbNail"
@@ -253,7 +253,7 @@
 
 
           <div
-            class="flex border laptop:flex-row mobile:flex-col laptop:h-full laptop:w-[500px] mobile:w-3/4 mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+            class="project-container-two flex border laptop:flex-row mobile:flex-col laptop:h-full laptop:w-[500px] mobile:w-3/4 mobile:h-[500px] border-slate-700 rounded-lg bg-black">
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
               <img src="./images/roomreservation.png" alt="roomsystemThumbNail"
@@ -300,7 +300,7 @@
         <div
           class="flex laptop:h-64 w-full mobile:flex-col mobile:items-center laptop:flex-row laptop:gap-40 mobile:gap-14">
           <div
-            class="flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+            class="project-container-three flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
 
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
@@ -345,7 +345,7 @@
 
 
           <div
-            class="flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+            class="project-container-four flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
               <img src="./images/yourshorturls.png" alt="roomsystemThumbNail"
@@ -393,7 +393,7 @@
         <div
           class="flex laptop:h-64 w-full mobile:flex-col mobile:items-center laptop:flex-row laptop:gap-40 mobile:gap-14">
           <div
-            class="flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+            class="project-container-five flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
 
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
@@ -439,7 +439,7 @@
 
 
           <div
-            class="flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
+            class="project-container-six flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
               <img src="./images/ptnailsbar.png" alt="roomsystemThumbNail"
@@ -483,6 +483,15 @@
         </div>
       </div>
     </section>
+    <!-- Contact Section -->
+    <section class="contact-container mobile:h-full laptop:h-screen">
+      <div class="flex flex-col items-center laptop:gap-20 mobile:gap-10">
+        <h2 class="contactMe load-hidden uppercase laptop:text-4xl mobile:text-2xl text-lime-500 font-bold contact"> &lt; &apos; Get in touch &apos; &gt;</h2>
+        <!-- Form Container -->
+        <div class="flex flex-col items-center gap-10">
+          
+        </div>
+  </section>
     <script type="text/javascript" src="index.js"></script>
 </body>
 

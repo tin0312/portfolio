@@ -8,6 +8,9 @@ module.exports = {
     },
 
     extend: {
+      colors: {
+        "form": "#151515"
+      }
     },
   },
   plugins: [],

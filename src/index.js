@@ -58,40 +58,64 @@ window.onload = function () {
     css.innerHTML = ".typewrite > .wrap {border-right: 0.08em solid #fff;}";
     document.body.appendChild(css);
 };
-// Effects
+
+// Page scroll reveal animation
+
+function revealElement(target, options) {
+    ScrollReveal().reveal(target, options);
+}
+
 let slideUp = {
     origin: "bottom",
     opacity: null,
-    delay: 300,
+    delay: 100,
     distance: "50%"
 }
+
 let slideRight = {
     origin: "left",
     opacity: null,
-    delay: 300,
+    delay: 100,
     distance: "50%"
 }
+
 let slideLeft = {
     origin: "right",
     opacity: null,
-    delay: 300,
+    delay: 100,
     distance: "50%"
 }
-ScrollReveal().reveal(".avatarImage", slideLeft)
-ScrollReveal().reveal(".myName", { delay: 300 });
-ScrollReveal().reveal(".typewrite", { delay: 300 })
-ScrollReveal().reveal(".avatar", slideRight)
-ScrollReveal().reveal(".about",{delay: 200})
-ScrollReveal().reveal(".stack-container-one", {...slideRight, delay: "100"})
-ScrollReveal().reveal(".stack-container-two", {...slideLeft, delay: "100"})
-ScrollReveal().reveal(".stack-container-three", {...slideRight, delay: "100"})
-ScrollReveal().reveal(".techStack", slideUp)
-ScrollReveal().reveal(".myProject", slideUp)
-ScrollReveal().reveal(".contactMe", {delay: 300})
-ScrollReveal().reveal(".project-container-one", {delay: 100})
-ScrollReveal().reveal(".project-container-two", {delay: 200})
-ScrollReveal().reveal(".project-container-three", {delay: 300})
-ScrollReveal().reveal(".project-container-four", {delay: 400})
-ScrollReveal().reveal(".project-container-five", {delay: 500})
-ScrollReveal().reveal(".project-container-six", {delay: 600})
-ScrollReveal().reveal(".contact-container", slideUp)
+
+revealElement(".avatarImage", slideLeft);
+revealElement(".myName", { delay: 300 });
+revealElement(".typewrite", { delay: 300 });
+revealElement(".avatar", slideRight);
+revealElement(".about", { delay: 200 });
+revealElement(".stack-container-one", slideRight);
+revealElement(".stack-container-two", slideLeft);
+revealElement(".stack-container-three", slideRight);
+revealElement(".techStack", slideUp);
+revealElement(".myProject", slideUp);
+revealElement(".contactMe", { delay: 300 });
+revealElement(".project-container-one", { delay: 100 });
+revealElement(".project-container-two", { delay: 100 });
+revealElement(".project-container-three", { delay: 100 });
+revealElement(".project-container-four", { delay: 100 });
+revealElement(".project-container-five", { delay: 100 });
+revealElement(".project-container-six", { delay: 100 });
+revealElement(".contact-container", slideUp);
+
+// Navbar 
+let navBar = document.querySelector(".nav-bar")
+let hamburger = document.getElementsByClassName("hamburger")
+let navMenu = document.querySelector(".nav-menu")
+let hamburgerBtn = document.querySelector(".hamburger-btn")
+
+window.addEventListener("scroll", () => window.scrollY > 0 ? navBar.classList.add("bg-black") : navBar.classList.remove("bg-black"))
+document.querySelector('.hamburger-btn').addEventListener('click', function () {
+        document.querySelectorAll('.hamburger, .hamburger.hidden').forEach(function (element) {
+            element.classList.toggle('hidden');
+        });
+        navMenu.classList.toggle('hidden')
+        navMenu.classList.add('flex')
+    });

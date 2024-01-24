@@ -1,9 +1,13 @@
+<html>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/output.css" />
+  <!-- Web page icon -->
+  <link rel="icon" type="image/x-icon" href="./images/pageIcon.ico" />
   <!-- Font Family -->
-  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
     ScrollReveal({ reset: true })
@@ -16,7 +20,7 @@
     <!-- Nav bar section -->
     <div class="nav-bar w-screen fixed top-0 h-32 flex justify-center items-center z-20">
       <nav class="flex w-4/5 justify-between laptop:justify-center laptop:gap-6 text-stone-50">
-        <a href="#home" class="hover:text-lime-300 z-30">
+        <a href="#home" class="nav-link hover:text-lime-300 z-30">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -36,28 +40,33 @@
                 d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
                 clip-rule="evenodd" />
             </svg>
-
           </span>
         </button>
         <div
           class="hidden absolute laptop:relative bg-black bg-opacity-90 w-screen laptop:flex laptop:flex-row h-screen laptop:h-auto laptop:w-auto nav-menu flex-col items-center left-0 justify-center gap-10">
-          <a class="text-xl hover:text-lime-300 hover:cursor-pointer hover:scale-125 transition-transform" href="#about">about</a>
-          <a class="text-xl hover:text-lime-300 hover:cursor-pointer hover:scale-125 transition-transform" href="#skill">skills</a>
-          <a class="text-xl hover:text-lime-300 hover:cursor-pointer hover:scale-125 transition-transform" href="#projects">projects</a>
-          <a class="text-xl hover:text-lime-300 hover:cursor-pointer hover:scale-125 transition-transform" href="#contact">contact</a>
+          <a class="text-xl nav-link hover:text-lime-300 hover:cursor-pointer hover:scale-125 transition-transform"
+            href="#about">about</a>
+          <a class="text-xl nav-link hover:text-lime-300 hover:cursor-pointer hover:scale-125 transition-transform"
+            href="#skill">skills</a>
+          <a class="text-xl nav-link hover:text-lime-300 hover:cursor-pointer hover:scale-125 transition-transform"
+            href="#projects">projects</a>
+          <a class="text-xl nav-link hover:text-lime-300 hover:cursor-pointer hover:scale-125 transition-transform"
+            href="#contact">contact</a>
         </div>
-
       </nav>
     </div>
     <!-- Home section -->
     <section id="home"
       class="h-screen flex laptop:flex-row laptop:items-center laptop:justify-center mobile:pb-10 relative">
-
       <div class="flex mobile:flex-col laptop:flex-row mobile:items-center mobile:gap-36 mobile:pt-[130px]">
         <!-- Info Container -->
         <div class="flex flex-col gap-5 laptop:w-1/2 items-center mobile:w-full">
-          <p class="opacity-50 mobile:text-2xl laptop:text-xl">Hi, I&apos;m</p>
-          <h3 class="font-bold mobile:text-4xl laptop:text-6xl myName">&nbsp;Truong Nhat Hoang</h3>
+          <p class="opacity-50 mobile:text-2xl laptop:text-xl">
+            Hi, I&apos;m
+          </p>
+          <h3 class="font-bold mobile:text-4xl laptop:text-6xl myName">
+            &nbsp;Truong Nhat Hoang
+          </h3>
           <h4 class="font-bold text-lime-400 text-2xl">
             <p>
               <a href="" class="typewrite" data-period="2000"
@@ -65,7 +74,6 @@
                 <span class="wrap"></span>
               </a>
             </p>
-
           </h4>
         </div>
         <!-- Image Container -->
@@ -78,31 +86,36 @@
           <div class="blob blob-3"></div>
         </div>
       </div>
-
     </section>
     <!-- About Section -->
     <section id="about"
       class="laptop:h-screen laptop:flex-row mobile:flex-col flex laptop:justify-center laptop:items-center relative overflow-hidden">
-      <div id="about" class="flex laptop:flex-row mobile:flex-col laptop:justify-center laptop:items-center">
-        <div class="laptop:w-1/2 mobile:w-full flex desktop:justify-end  mobile:justify-center mobile:pb-5">
+      <div class="flex laptop:flex-row mobile:flex-col laptop:justify-center laptop:items-center">
+        <div class="laptop:w-1/2 mobile:w-full flex desktop:justify-end mobile:justify-center mobile:pb-5">
           <img src="./images/aboutImage.jpg" alt="apple-avatar"
-            class="w-1/3 apple-sticker rounded-full shadow-2xl avatar">
+            class="w-1/3 apple-sticker rounded-full shadow-2xl avatar" />
         </div>
         <div class="mobile:w-full laptop:w-1/2 flex flex-col mobile:items-center laptop:gap-4 mobile:gap-6">
-          <h2 class="uppercase text-4xl text-lime-500 font-bold about">Nice to meet you!</h2>
+          <h2 class="uppercase text-4xl text-lime-500 font-bold about">
+            Nice to meet you!
+          </h2>
           <p
             class="leading-6 about laptop:w-3/5 mobile:w-3/4 laptop:text-start mobile:text-center mobile:text-lg laptop:text-lg opacity-50">
-            I&apos;m a frontend developer based in Toronto who is originally from Viet Nam.
-            My background is in Networking Security at Ontario Tech University in Oshawa as major.
-            During my studies, I took some of software development courses and it really has triggered
-            my passion for coding.I enjoy coding as my fantasy and building stuff from scratch is considered
-            as my greatest satisfaction! Besides school, I have been taking extra courses in order to get in-depth
-            understanding about software development cycles and its essentials.With that, as I keep working and applying
-            my knowledge into my side and freelance projects, my desire to contribute to software development has been
-            growing bigger and bigger over time.
-            <br><br>
-            I am on a lookout for a junior role where I can put my skills to test and continue to be
-            a part of the envolving industry of software!
+            I&apos;m a frontend developer based in Toronto who is originally
+            from Viet Nam. My background is in Networking Security at Ontario
+            Tech University in Oshawa as major. During my studies, I took some
+            of software development courses and it really has triggered my
+            passion for coding.I enjoy coding as my fantasy and building stuff
+            from scratch is considered as my greatest satisfaction! Besides
+            school, I have been taking extra courses in order to get in-depth
+            understanding about software development cycles and its
+            essentials.With that, as I keep working and applying my knowledge
+            into my side and freelance projects, my desire to contribute to
+            software development has been growing bigger and bigger over time.
+            <br /><br />
+            I am on a lookout for a junior role where I can put my skills to
+            test and continue to be a part of the envolving industry of
+            software!
           </p>
         </div>
       </div>
@@ -117,133 +130,128 @@
       <div class="meteor-8"></div>
       <div class="meteor-9"></div>
     </section>
-
-    </section>
     <!-- Skill Section -->
-    <section id="skill"
-      class="laptop:h-screen flex  flex-col items-center justify-center laptop:gap-40 overflow-hidden">
-      <h2 class="skill-section uppercase laptop:text-4xl mobile:text-2xl  text-lime-500 font-bold techStack"> &lt;
-        &apos; My Tech
-        Stack &apos; &gt;</h2>
-      <div>
-        <!-- Tech Stack Container -->
-        <section class="flex flex-col laptop:gap-20 mobile:gap-10 overflow-hidden py-10">
+    <section id="skill" class="laptop:h-screen flex flex-col items-center justify-center laptop:gap-40 overflow-hidden">
+      <h2 class="skill-section uppercase laptop:text-4xl mobile:text-2xl text-lime-500 font-bold techStack">
+        &lt; &apos; My Tech Stack &apos; &gt;
+      </h2>
+      <!-- Tech Stack Container -->
+      <section class="flex flex-col laptop:gap-20 mobile:gap-10 overflow-hidden py-10">
+        <div
+          class="flex laptop:flex-row mobile:flex-col mobile:items-center mobile:gap-10 laptop:gap-20 stack-container-one">
+          <!-- First row -->
           <div
-            class="flex laptop:flex-row mobile:flex-col mobile:items-center mobile:gap-10 laptop:gap-20 stack-container-one">
-            <!-- First row -->
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black hover:border-none  cursor-pointer shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/htmlIcon.png" alt="html-icon" class="stack-icon" width="50px">
-                <p class="text-xl">HTML</p>
-              </div>
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/htmlIcon.png" alt="html-icon" class="stack-icon" width="50px" />
+              <p class="text-xl">HTML</p>
             </div>
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full    hover:bg-lime-50 hover:text-black  hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/cssIcon.png" alt="css-icon" width="50px">
-                <p class="text-xl">CSS</p>
-              </div>
+          </div>
+          <div
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/cssIcon.png" alt="css-icon" width="50px" />
+              <p class="text-xl">CSS</p>
             </div>
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black  hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/jsIcon.png" alt="javascript-icon" width="50px">
-                <p class="text-xl">JAVASCRIPT</p>
-              </div>
+          </div>
+          <div
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/jsIcon.png" alt="javascript-icon" width="50px" />
+              <p class="text-xl">JAVASCRIPT</p>
             </div>
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black  hover:border-none cursor-pointer   shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/tailwindIcon.png" alt="Tailwind-Icon" width="50px">
-                <p class="text-xl">TAILWIND</p>
-              </div>
+          </div>
+          <div
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/tailwindIcon.png" alt="Tailwind-Icon" width="50px" />
+              <p class="text-xl">TAILWIND</p>
             </div>
+          </div>
+        </div>
 
+        <div
+          class="flex laptop:flex-row mobile:flex-col mobile:items-center mobile:gap-10 laptop:gap-20 stack-container-two">
+          <!-- Second Row -->
+
+          <div
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/bootstrapIcon.png" alt="Bootstrap-Icon" width="50px" />
+              <p class="text-xl">BOOTSTRAP</p>
+            </div>
           </div>
 
           <div
-            class="flex laptop:flex-row mobile:flex-col mobile:items-center mobile:gap-10 laptop:gap-20  stack-container-two">
-            <!-- Second Row -->
-
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/bootstrapIcon.png" alt="Bootstrap-Icon" width="50px">
-                <p class="text-xl">BOOTSTRAP</p>
-              </div>
-            </div>
-
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black hover:border-none  cursor-pointer  shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/sassIcon.png" alt="Sass-Icon" width="50px">
-                <p class="text-xl">SASS</p>
-              </div>
-            </div>
-
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border  border-slate-500 rounded-full   hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/reactIcon.png" alt="React-Icon" width="50px">
-                <p class="text-xl">REACT</p>
-              </div>
-            </div>
-
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border  border-slate-500 rounded-full   hover:bg-lime-50 hover:text-black hover:border-none  cursor-pointer   shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/nextIcon.png" alt="NextJS-Icon" width="50px">
-                <p class="text-xl">NEXTJS</p>
-              </div>
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/sassIcon.png" alt="Sass-Icon" width="50px" />
+              <p class="text-xl">SASS</p>
             </div>
           </div>
-          <!-- Third Row -->
+
           <div
-            class=" p-1 flex laptop:flex-row mobile:flex-col mobile:items-center mobile:gap-10 laptop:gap-20 stack-container-three">
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none  cursor-pointer  shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/typescriptIcon.png" alt="Typescript-Icon" width="50px">
-                <p class="text-xl">TYPESCRIPT</p>
-              </div>
-            </div>
-
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border  border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/firebaseIcon.png" alt="Firebase-Icon" width="50px">
-                <p class="text-xl">FIREBASE</p>
-              </div>
-            </div>
-
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border  border-slate-500 rounded-full  hover:bg-lime-50 hover:text-black hover:border-none  cursor-pointer  shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/figmaIcon.png" alt="Figma-Icon" width="50px">
-                <p class="text-xl">FIGMA</p>
-              </div>
-            </div>
-
-            <div
-              class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border  border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer  shadow-lg shadow-lime-100">
-              <div class="flex items-center laptop:gap-2 mobile:gap-6">
-                <img src="./images/viteIcon.png" alt="Vite-Icon" width="50px">
-                <p class="text-xl">VITE</p>
-              </div>
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/reactIcon.png" alt="React-Icon" width="50px" />
+              <p class="text-xl">REACT</p>
             </div>
           </div>
-      </div>
+
+          <div
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/nextIcon.png" alt="NextJS-Icon" width="50px" />
+              <p class="text-xl">NEXTJS</p>
+            </div>
+          </div>
+        </div>
+        <!-- Third Row -->
+        <div
+          class="p-1 flex laptop:flex-row mobile:flex-col mobile:items-center mobile:gap-10 laptop:gap-20 stack-container-three">
+          <div
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/typescriptIcon.png" alt="Typescript-Icon" width="50px" />
+              <p class="text-xl">TYPESCRIPT</p>
+            </div>
+          </div>
+
+          <div
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/firebaseIcon.png" alt="Firebase-Icon" width="50px" />
+              <p class="text-xl">FIREBASE</p>
+            </div>
+          </div>
+
+          <div
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/figmaIcon.png" alt="Figma-Icon" width="50px" />
+              <p class="text-xl">FIGMA</p>
+            </div>
+          </div>
+
+          <div
+            class="laptop:w-52 mobile:w-80 flex justify-center p-1 skill-card border border-slate-500 rounded-full hover:bg-lime-50 hover:text-black hover:border-none cursor-pointer shadow-lg shadow-lime-100">
+            <div class="flex items-center laptop:gap-2 mobile:gap-6">
+              <img src="./images/viteIcon.png" alt="Vite-Icon" width="50px" />
+              <p class="text-xl">VITE</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!-- Project Section -->
     <section id="projects"
       class="laptop:h-screen flex flex-col items-center justify-center laptop:gap-20 mobile:gap-10 overflow-hidden">
-      <h2 class="uppercase laptop:text-4xl mobile:text-2xl text-lime-500 font-bold project myProject"> &lt; &apos; My
-        Projects &apos; &gt;</h2>
+      <h2 class="uppercase laptop:text-4xl mobile:text-2xl text-lime-500 font-bold project myProject">
+        &lt; &apos; My Projects &apos; &gt;
+      </h2>
       <!-- Project container -->
       <div class="flex flex-col gap-10 items-center">
-
         <!-- First Row -->
         <div
           class="flex laptop:h-64 w-full mobile:flex-col mobile:items-center laptop:flex-row laptop:gap-40 mobile:gap-14">
@@ -252,9 +260,9 @@
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
               <img src="./images/weatheressentials.png" alt="roomsystemThumbNail"
-                class="w-full h-full mobile:hidden laptop:block">
+                class="w-full h-full mobile:hidden laptop:block" />
               <img src="./images/weatheressential-mobile.PNG" alt="roomsystemThumbNail"
-                class="w-full h-full laptop:hidden">
+                class="w-full h-full laptop:hidden" />
             </div>
             <!-- Project Information -->
             <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
@@ -262,27 +270,30 @@
                 <p class="text-lg font-bold">Weather Forecast</p>
                 <!-- Project stacks -->
                 <div class="flex items-center gap-1">
-                  <img src="./images/reactIcon.png" alt="react-icon" width="30px">
-                  <img src="./images/tailwindIcon.png" alt="tailwind-icon" width="30px">
-                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
-                  <img src="./images/firebaseIcon.png" alt="firebase-icon" width="30px">
+                  <img src="./images/reactIcon.png" alt="react-icon" width="30px" />
+                  <img src="./images/tailwindIcon.png" alt="tailwind-icon" width="30px" />
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px" />
+                  <img src="./images/firebaseIcon.png" alt="firebase-icon" width="30px" />
                 </div>
               </div>
               <!-- Project description -->
-              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10">An assistance for your day-to-day planning
-                activities, enabling users to effortlessly explore weather essentials.
+              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10">
+                An assistance for your day-to-day planning activities,
+                enabling users to effortlessly explore weather essentials.
               </p>
               <!-- Project link -->
               <div>
                 <div class="flex justify-center gap-4">
                   <a href="https://github.com/tin0312/weather-app">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                      <p>Code</p>
+                      <img src="./images/github.svg" alt="github-icon" width="20px" />
                     </div>
                   </a>
                   <a href="https://weatheressentials.netlify.app/">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                      <p>Live</p>
+                      <img src="./images/linkIcon.png" alt="link-icon" width="20px" />
                     </div>
                   </a>
                 </div>
@@ -290,16 +301,14 @@
             </div>
           </div>
 
-
-
           <div
             class="project-container-two flex border laptop:flex-row mobile:flex-col laptop:h-full laptop:w-[500px] mobile:w-3/4 mobile:h-[500px] border-slate-700 rounded-lg bg-black">
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
               <img src="./images/roomreservation.png" alt="roomsystemThumbNail"
-                class="w-full h-full mobile:hidden laptop:block">
+                class="w-full h-full mobile:hidden laptop:block" />
               <img src="./images/roomreservation-mobile.png" alt="roomsystemThumbNail"
-                class="w-full h-full laptop:hidden">
+                class="w-full h-full laptop:hidden" />
             </div>
             <!-- Project Information -->
             <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
@@ -307,14 +316,15 @@
                 <p class="text-lg font-bold">Room reservation</p>
                 <!-- Project stacks -->
                 <div class="flex items-center gap-1">
-                  <img src="./images/pythonIcon.png" alt="python-icon" width="30px">
-                  <img src="./images/bootstrapIcon.png" alt="bootstrap-icon" width="30px">
-                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
-                  <img src="./images/mySQLIcon.png" alt="mysql-icon" width="30px">
+                  <img src="./images/pythonIcon.png" alt="python-icon" width="30px" />
+                  <img src="./images/bootstrapIcon.png" alt="bootstrap-icon" width="30px" />
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px" />
+                  <img src="./images/mySQLIcon.png" alt="mysql-icon" width="30px" />
                 </div>
               </div>
               <!-- Project description -->
-              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10"> Plan your study width a full support of room
+              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10">
+                Plan your study width a full support of room
                 booking/cancelling system with ease.
               </p>
               <!-- Project link -->
@@ -322,12 +332,14 @@
                 <div class="flex justify-center gap-4">
                   <a href="https://github.com/tin0312/roomBookingSystem">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                      <p>Code</p>
+                      <img src="./images/github.svg" alt="github-icon" width="20px" />
                     </div>
                   </a>
                   <a href="http://roomreservation.pythonanywhere.com/">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                      <p>Live</p>
+                      <img src="./images/linkIcon.png" alt="link-icon" width="20px" />
                     </div>
                   </a>
                 </div>
@@ -336,13 +348,11 @@
           </div>
         </div>
 
-
         <!-- Second Row -->
         <div
           class="flex laptop:h-64 w-full mobile:flex-col mobile:items-center laptop:flex-row laptop:gap-40 mobile:gap-14">
           <div
             class="project-container-three flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
-
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
               <img src="./images/challengeyourself.png" alt="quizThumbNail"
@@ -356,28 +366,31 @@
                 <p class="text-lg font-bold">Quizzical</p>
                 <!-- Project stacks -->
                 <div class="flex items-center gap-1">
-                  <img src="./images/reactIcon.png" alt="react-icon" width="30px">
-                  <img src="./images/bootstrapIcon.png" alt="bootstrap-icon" width="30px">
-                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
-                  <img src="./images/apiIcon.png" alt="api-icon" width="30px">
+                  <img src="./images/reactIcon.png" alt="react-icon" width="30px" />
+                  <img src="./images/bootstrapIcon.png" alt="bootstrap-icon" width="30px" />
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px" />
+                  <img src="./images/apiIcon.png" alt="api-icon" width="30px" />
                 </div>
               </div>
               <!-- Project description -->
-              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10"> An assistance that helps you boost up your
-                knowledge in a variaty of aspects, pick a topic and challenge your self with different difficulty
-                levels!
+              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10">
+                An assistance that helps you boost up your knowledge in a
+                variaty of aspects, pick a topic and challenge your self with
+                different difficulty levels!
               </p>
               <!-- Project link -->
               <div>
                 <div class="flex justify-center gap-4">
                   <a href="https://github.com/tin0312/quizApp">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                      <p>Code</p>
+                      <img src="./images/github.svg" alt="github-icon" width="20px" />
                     </div>
                   </a>
                   <a href="https://challengeyourself.netlify.app/">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                      <p>Live</p>
+                      <img src="./images/linkIcon.png" alt="link-icon" width="20px" />
                     </div>
                   </a>
                 </div>
@@ -385,16 +398,14 @@
             </div>
           </div>
 
-
-
           <div
             class="project-container-four flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
               <img src="./images/yourshorturls.png" alt="roomsystemThumbNail"
-                class="w-full h-full mobile:hidden laptop:block">
+                class="w-full h-full mobile:hidden laptop:block" />
               <img src="./images/yourshorturls-mobile.png" alt="roomsystemThumbNail"
-                class="w-full h-full laptop:hidden">
+                class="w-full h-full laptop:hidden" />
             </div>
             <!-- Project Information -->
             <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
@@ -402,35 +413,37 @@
                 <p class="text-lg font-bold">URL Shortener</p>
                 <!-- Project stacks -->
                 <div class="flex items-center gap-1">
-                  <img src="./images/reactIcon.png" alt="react-icon" width="30px">
-                  <img src="./images/tailwindIcon.png" alt="tailwind-icon" width="30px">
-                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
-                  <img src="./images/sassIcon.png" alt="firebase-icon" width="30px">
+                  <img src="./images/reactIcon.png" alt="react-icon" width="30px" />
+                  <img src="./images/tailwindIcon.png" alt="tailwind-icon" width="30px" />
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px" />
+                  <img src="./images/sassIcon.png" alt="firebase-icon" width="30px" />
                 </div>
               </div>
               <!-- Project description -->
               <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10">
-                Conveniently have your long and difficult to remember URLs shortened by our trimmer which helps you to
-                keep everything organized!
+                Conveniently have your long and difficult to remember URLs
+                shortened by our trimmer which helps you to keep everything
+                organized!
               </p>
               <!-- Project link -->
               <div>
                 <div class="flex justify-center gap-4">
                   <a href="https://github.com/tin0312/shortly-landing-page">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                      <p>Code</p>
+                      <img src="./images/github.svg" alt="github-icon" width="20px" />
                     </div>
                   </a>
                   <a href="https://yourshorturls.netlify.app/">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                      <p>Live</p>
+                      <img src="./images/linkIcon.png" alt="link-icon" width="20px" />
                     </div>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
 
         <!-- Third Row -->
@@ -438,13 +451,12 @@
           class="flex laptop:h-64 w-full mobile:flex-col mobile:items-center laptop:flex-row laptop:gap-40 mobile:gap-14">
           <div
             class="project-container-five flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
-
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
               <img src="./images/passwordGenerator.png" alt="passwordGenerator"
-                class="w-full h-full mobile:hidden laptop:block">
+                class="w-full h-full mobile:hidden laptop:block" />
               <img src="./images/passwordGenerator-mobile.png" alt="passwordGenerator"
-                class="w-full h-full laptop:hidden">
+                class="w-full h-full laptop:hidden" />
             </div>
             <!-- Project Information -->
             <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
@@ -452,15 +464,16 @@
                 <p class="text-lg font-bold">Password Generator</p>
                 <!-- Project stacks -->
                 <div class="flex items-center gap-1">
-                  <img src="./images/reactIcon.png" alt="react-icon" width="30px">
-                  <img src="./images/bootstrapIcon.png" alt="bootstrap-icon" width="30px">
-                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
-                  <img src="./images/sassIcon.png" alt="sass-icon" width="30px">
+                  <img src="./images/reactIcon.png" alt="react-icon" width="30px" />
+                  <img src="./images/bootstrapIcon.png" alt="bootstrap-icon" width="30px" />
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px" />
+                  <img src="./images/sassIcon.png" alt="sass-icon" width="30px" />
                 </div>
               </div>
               <!-- Project description -->
-              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10"> A password manager generator with custom options
-                that helps with password generation and security.
+              <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10">
+                A password manager generator with custom options that helps
+                with password generation and security.
               </p>
               <!-- Project link -->
               <div>
@@ -468,12 +481,14 @@
                   <a
                     href="https://github.com/tin0312/password-generator/tree/412a562a95451c898e2b7362696e049b1113f813p">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                      <p>Code</p>
+                      <img src="./images/github.svg" alt="github-icon" width="20px" />
                     </div>
                   </a>
                   <a href="https://chooseyourpassword.netlify.app/">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                      <p>Live</p>
+                      <img src="./images/linkIcon.png" alt="link-icon" width="20px" />
                     </div>
                   </a>
                 </div>
@@ -481,15 +496,13 @@
             </div>
           </div>
 
-
-
           <div
             class="project-container-six flex border laptop:flex-row mobile:flex-col laptop:h-full mobile:w-3/4 laptop:w-[500px] mobile:h-[500px] border-slate-700 rounded-lg bg-black">
             <!-- Project Image -->
             <div class="mobile:w-full laptop:h-full laptop:w-1/4 mobile:h-1/2">
               <img src="./images/ptnailsbar.png" alt="roomsystemThumbNail"
-                class="w-full h-full mobile:hidden laptop:block">
-              <img src="./images/ptnailsbar-mobile.png" alt="roomsystemThumbNail" class="w-full h-full laptop:hidden">
+                class="w-full h-full mobile:hidden laptop:block" />
+              <img src="./images/ptnailsbar-mobile.png" alt="roomsystemThumbNail" class="w-full h-full laptop:hidden" />
             </div>
             <!-- Project Information -->
             <div class="flex flex-col justify-between laptop:w-3/4 mobile:1/2 p-4">
@@ -497,35 +510,37 @@
                 <p class="text-lg font-bold">PT Nails and Bar</p>
                 <!-- Project stacks -->
                 <div class="flex items-center gap-1">
-                  <img src="./images/reactIcon.png" alt="react-icon" width="30px">
-                  <img src="./images/tailwindIcon.png" alt="tailwind-icon" width="30px">
-                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px">
-                  <img src="./images/sassIcon.png" alt="firebase-icon" width="30px">
+                  <img src="./images/reactIcon.png" alt="react-icon" width="30px" />
+                  <img src="./images/tailwindIcon.png" alt="tailwind-icon" width="30px" />
+                  <img src="./images/htmlIcon.png" alt="html-icon" width="30px" />
+                  <img src="./images/sassIcon.png" alt="firebase-icon" width="30px" />
                 </div>
               </div>
               <!-- Project description -->
               <p class="opacity-50 mobile:w-72 laptop:w-80 pt-4 pb-10">
-                PT Nails & Bar landing page provides precise and up-to-date information about the store with on-going
-                promotion updates and online booking.
+                PT Nails & Bar landing page provides precise and up-to-date
+                information about the store with on-going promotion updates
+                and online booking.
               </p>
               <!-- Project link -->
               <div>
                 <div class="flex justify-center gap-4">
                   <a href="https://github.com/tin0312/PT-Nails-and-Bar-Milton">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Code</p><img src="./images/github.svg" alt="github-icon" width="20px">
+                      <p>Code</p>
+                      <img src="./images/github.svg" alt="github-icon" width="20px" />
                     </div>
                   </a>
                   <a href="https://ptnailsbar.netlify.app/">
                     <div class="flex items-center gap-2 border border-white rounded-lg p-1 hover:border-lime-300">
-                      <p>Live</p><img src="./images/linkIcon.png" alt="link-icon" width="20px">
+                      <p>Live</p>
+                      <img src="./images/linkIcon.png" alt="link-icon" width="20px" />
                     </div>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -533,57 +548,61 @@
     <section id="contact" class="laptop:h-screen flex flex-col items-center justify-center">
       <div class="w-full flex flex-col items-center laptop:gap-52 mobile:gap-10">
         <h2 class="contactMe uppercase laptop:text-4xl mobile:text-2xl text-lime-500 font-bold contact">
-          &lt; &apos; Get in touch &apos; &gt;</h2>
+          &lt; &apos; Get in touch &apos; &gt;
+        </h2>
         <!-- Form Container -->
         <form method="POST" name="contact-form" action="https://formsubmit.co/justinhoang0312@gmail.com"
           class="contact-container mobile:w-11/12 laptop:w-2/5 bg-form border-none rounded-2xl flex flex-col items-center laptop:p-10 mobile:p-5 laptop:gap-4 mobile:gap-6 outline-none">
           <!-- Input group -->
           <div class="input-group flex flex-col gap-3 border-none outline-none rounded-xl laptop:w-3/4 mobile:w-full">
             <label class="input-label" for="full-name">Full Name*</label>
-            <input type="text" id="full-name" name="full-name" class="bg-transparent form-element outline-none border-b border-slate-600 pb-1 focus:border-lime-400 placeholder:italic placeholder:laptop:text-sm placeholder:mobile:text-md
-              " placeholder="Truong Nhat Hoang" required>
+            <input type="text" id="full-name" name="full-name"
+              class="bg-transparent form-element outline-none border-b border-slate-600 pb-1 focus:border-lime-400 placeholder:italic placeholder:laptop:text-sm placeholder:mobile:text-md"
+              placeholder="Truong Nhat Hoang" required />
           </div>
           <!-- Submission confirmation -->
           <div class="input-group">
-            <input type="hidden" name="_next" value="https://truonghoang.netlify.app/confirmation.html">
-            <input type="hidden" name="_subject" value="New email from Truong">
+            <input type="hidden" name="_next" value="https://truonghoang.netlify.app/confirmation.html" />
+            <input type="hidden" name="_subject" value="New email from Truong" />
           </div>
           <!-- Input group -->
           <div class="input-group border-none flex flex-col gap-2 laptop:w-3/4 mobile:w-full">
             <label class="input-label" for="email">Email*</label>
             <input type="email" id="email"
               class="bg-transparent form-element outline-none border-b border-slate-600 pb-1 focus:border-lime-400 placeholder:italic placeholder:laptop:text-sm placeholder:mobile:text-md"
-              placeholder="justinhoang0312@gmail.com" required>
+              placeholder="justinhoang0312@gmail.com" required />
           </div>
           <!-- Input group -->
           <div class="input-group flex flex-col border-none gap-2 laptop:w-3/4 mobile:w-full">
             <label class="message" for="message">How can I help?*</label>
             <textarea name="message" id="message"
               class="bg-transparent form-element outline-none border-b border-slate-600 float-left py-5 focus:border-lime-400 placeholder:italic placeholder:laptop:text-sm placeholder:mobile:text-md"
-              placeholder="Let&apos;s connect" required></textarea>
+              placeholder="Let's connect" required></textarea>
           </div>
           <!-- submit-group -->
           <div class="submit-group mt-3">
-            <input type="submit" class="border p-2 cursor-pointer border-white rounded-lg hover:border-lime-300 "
-              value="Send message">
+            <input type="submit" class="border p-2 cursor-pointer border-white rounded-lg hover:border-lime-300"
+              value="Send message" />
           </div>
         </form>
       </div>
     </section>
-    <!--Footer  -->
-    <footer class="w-full laptop:h-20 flex laptop:items-center mobile:justify-between relative bottom-0 text-slate-50">
-      <div
-        class="flex mobile:flex-col laptop:flex-row mobile:justify-between mobile:items-center laptop:justify-center items-center gap-10 bg-black w-full h-full">
-        <p class="text-sm">Developed by Truong @2024</p>
-        <div class="flex gap-4 justify-center items-center">
-          <a href="https://github.com/tin0312" class="social-icon hover:scale-125"><img src="./images/github.svg"
-              alt="github-icon" width="30px" /></a>
-          <a href="https://www.linkedin.com/in/nhattruonghoang/ " class="social-icon hover:scale-125"><img
-              src="./images/linkedinIcon.jpg" alt="linkin-icon" width="40px"></a>
-        </div>
-      </div>
-    </footer>
   </main>
+  <!--Footer  -->
+  <footer
+    class="w-full top-20 laptop:top-0 laptop:h-20 flex laptop:items-center mobile:justify-between relative bottom-0 text-slate-50">
+    <div
+      class="flex mobile:flex-col py-5 laptop:flex-row mobile:items-center justify-center items-center gap-3 laptop:gap-10 bg-black w-full h-full">
+      <p class="text-sm opacity-50">Developed by Truong @2024</p>
+      <div class="flex gap-4 justify-center items-center">
+        <a href="https://github.com/tin0312" class="social-icon hover:scale-125"><img src="./images/github.svg"
+            alt="github-icon" width="30px" /></a>
+        <a href="https://www.linkedin.com/in/nhattruonghoang/ " class="social-icon hover:scale-125"><img
+            src="./images/linkedinIcon.jpg" alt="linkin-icon" width="40px" /></a>
+      </div>
+    </div>
+  </footer>
+
   <script type="text/javascript" src="index.js"></script>
 </body>
 
